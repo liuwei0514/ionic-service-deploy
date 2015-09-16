@@ -1,4 +1,2 @@
-ionic-service-deploy
-====================
-
-App deploy service for Ionic. Official docs: http://docs.ionic.io/v1.0/docs/deploy-updating-apps
+# ionic-service-push-client
+Client-side code for the ionic push service
