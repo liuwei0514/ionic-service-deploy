@@ -124,7 +124,7 @@ angular.module('ionic.service.deploy', ['ionic.service.core'])
           var deferred = $q.defer();
           if (typeof IonicDeploy != "undefined") {
             IonicDeploy.check($ionicApp.getApp().app_id, $ionicApp.getApp().channel_tag, $ionicApp.getApp().domain, function (result) {
-              alert(result);
+              // alert(result);
               deferred.resolve(result === 'true');
             }, function (error) {
               deferred.reject(error);
@@ -213,7 +213,7 @@ angular.module('ionic.service.deploy', ['ionic.service.core'])
           if (typeof IonicDeploy != "undefined") {
             // Check for updates
             IonicDeploy.check($ionicApp.getApp().app_id, $ionicApp.getApp().channel_tag, $ionicApp.getApp().domain, function (result) {
-                alert(result);
+                // alert(result);
               if (result === 'true') {
                 // There are updates, download them
                 var progress = 0;
